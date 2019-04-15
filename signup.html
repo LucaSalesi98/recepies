@@ -7,20 +7,67 @@
             <meta name="author" content="Luca Salesi "<luca.salesi98@gmail.com>">
 
         <title>           RecePies Luca Salesi       </title>
-    </head>
-    <body></body>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyA1zuoZRpRhF2FCJyq9sy9kRgA8zD1xyIw",
-    authDomain: "recepies-93c4c.firebaseapp.com",
-    databaseURL: "https://recepies-93c4c.firebaseio.com",
-    projectId: "recepies-93c4c",
-    storageBucket: "recepies-93c4c.appspot.com",
-    messagingSenderId: "645081290149"
-  };
-  firebase.initializeApp(config);
-</script>
-    </html>
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand logo-style" href="index.html">RecePies</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link font-roboto" href="index.html">
+                <i class="fas fa-home"></i>
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-roboto" href="create.html">
+                <i class="far fa-plus-square"></i>
+              Crea la tua ricetta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="search.html">
+                <i class="fas fa-search"></i>
+              Cerca 
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">
+                <i class="fas fa-users"></i>
+              Il mio profilo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
