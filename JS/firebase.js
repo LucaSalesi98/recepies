@@ -11,4 +11,7 @@ var config = {
   };
   firebase.initializeApp(config);
 
-    
+  firebase.firestore().enablePersistence()
+  .catch((err) => {
+      console.log('Errore in Firestore Persistence: ',err);
+  });

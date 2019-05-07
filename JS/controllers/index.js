@@ -1,11 +1,13 @@
 // this is the controller for the index view (recepie listing)
 
 /*
+
 - ottenere la lista di ricetta dal database (ev. con un ordine)
   - per ogni ricetta:
     - creare un elemento completo HTML da apporre in pagina
     - completare le informazioni dell'elemente dall'oggetto ricevuta da DB
     - apporlo in pagina
+
 */
 
 var db = firebase.firestore();
@@ -13,12 +15,10 @@ var db = firebase.firestore();
 function loadRecepies(){
 
   db.collection('recepies').onSnapshot(function(snapshot){
-    console.log( "Datas Snapshot:", snapshot );
 
     clearContainer();
   
     snapshot.forEach( item => {
-      console.log("Element data: ", item.data());
       var recepieElementFromDb = item.data();
       var recepieIdFromDb = item.id;
       addRecepie(recepieElementFromDb,recepieIdFromDb);
