@@ -42,10 +42,12 @@ function addRecepie(recepie, recepieId){
     var nPersone = recepie.people;
     $('#NPersone').text(nPersone);
 
-    var Tpreparazione = recepie.preparationTime;
+    var tpreparazione = recepie.preparationTime;
+    var Tpreparazione = tpreparazione.concat(" min");
     $('#TPreparazione').text(Tpreparazione);
 
-    var Tcottura = recepie.cookingTime;
+    var tcottura = recepie.cookingTime;
+    var Tcottura = tcottura.concat(" min");
     $('#TCottura').text(Tcottura);
 
     var Costo = recepie.cost;
