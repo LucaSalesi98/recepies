@@ -25,12 +25,7 @@ function GetIdFromUrl(){
 
 
 
-function findGetParameter(myParam){
-    var myParam = null;
-        tmp = [];
-    location.search
-        .substr
-}
+
 loadRecepie(); 
 
 function addRecepie(recepie, recepieId){
