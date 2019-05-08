@@ -19,7 +19,7 @@ function GetIdFromUrl(){
     var UrlID = window.location.search;
     var UrlID2 = UrlID.substring(4, 10000);
     //console.log(UrlID);
-   // console.log(UrlID2);
+    // console.log(UrlID2);
     return(UrlID2);
 }
 
