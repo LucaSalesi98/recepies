@@ -18,8 +18,8 @@ function loadRecepie(){
 function GetIdFromUrl(){
     var UrlID = window.location.search;
     var UrlID2 = UrlID.substring(4, 10000);
-    //console.log(UrlID);
-    // console.log(UrlID2);
+    console.log(UrlID);
+    console.log(UrlID2);
     return(UrlID2);
 }
 
@@ -54,10 +54,11 @@ function addRecepie(recepie, recepieId){
     var Difficolta = recepie.difficulty;
     console.log(Difficolta);
     switch (Difficolta) {
-        case 0:
+        case "0"
+        :
         $('#0stelle').css("display", "block");
         break;
-        case 1:
+        case "1":
         $('#1stelle').css("display", "block");
         break;
         case "2":
